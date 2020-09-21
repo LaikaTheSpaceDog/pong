@@ -1,12 +1,48 @@
-// @font-face {
-//     font-family: 'Press Start 2P';
-//     src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-//     font-weight: normal;
-//     font-style: cursive;
-// }
-
 $fontStack: 'Press Start 2P', Helvetica, sans-serif;
 
 .heading {
     font-family: $fontStack;
+    font-size: 4rem;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.plainText {
+    font-family: $fontStack;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.listItem {
+    font-family: $fontStack;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.3rem 0;
+    list-style-type: square;
+}
+
+.score1 {
+    font-family: $fontStack;
+    font-size: 1.5rem;
+    color: white;
+    grid-column: 7 / 10;
+    grid-row: 2 / 5;
+    text-align: left;
+}
+
+.score2 {
+    font-family: $fontStack;
+    font-size: 1.5rem;
+    color: white;
+    grid-column: 12 / 15;
+    grid-row: 2 / 5;
+    text-align: right;
+}
+
+.gameHeader {
+    font-family: $fontStack;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
 }

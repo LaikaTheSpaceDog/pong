@@ -1,3 +1,178 @@
 .heading {
-  font-family: "Press Start 2P", Helvetica, sans-serif; 
-}
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding: 1em;
+  color: white; }
+
+.plainText {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white; }
+
+.listItem {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.3rem 0;
+  list-style-type: square; }
+
+.score1 {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  grid-column: 7 / 10;
+  grid-row: 2 / 5;
+  text-align: left; }
+
+.score2 {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  grid-column: 12 / 15;
+  grid-row: 2 / 5;
+  text-align: right; }
+
+.gameHeader {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.body {
+  margin: 0.5rem 2rem;
+  background-color: black; }
+
+.list {
+  border: 1px white solid;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box; }
+
+.button {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  padding: 0.3rem; }
+
+.card {
+  border: 1px white solid;
+  width: 20vw;
+  height: 35vh;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(32, 3.125%);
+  justify-content: center;
+  position: relative;
+  min-width: 260px; }
+
+.here:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px dotted white;
+  transform: translate(-50%); }
+
+.bar {
+  background: white;
+  width: 100%;
+  height: 100%; }
+
+.bar1 {
+  grid-column: 2 / 3;
+  grid-row: 19/ 25; }
+
+.bar2 {
+  grid-column: 19 / 20;
+  grid-row: 9 / 15; }
+
+.cardScore {
+  display: flex; }
+
+.fullCard {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 560px; }
+
+.scoreOdd {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 5vw;
+  min-width: 150px; }
+  .scoreOdd .plainText {
+    padding-bottom: 1rem; }
+  .scoreOdd .button {
+    align-self: flex-end; }
+
+.scoreEven {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 5vw;
+  align-self: flex-end;
+  min-width: 150px; }
+  .scoreEven .plainText {
+    padding-bottom: 1rem; }
+  .scoreEven .button {
+    align-self: flex-start; }
+
+.input {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  padding: 0.3rem;
+  width: 25vw; }

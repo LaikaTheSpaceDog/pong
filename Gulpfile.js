@@ -2,6 +2,23 @@ let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 let sass = require('gulp-sass');
 let rename = require('gulp-rename');
+let browserSync = require('browser-sync').create();
+let reload = browserSync.reload;
+
+// watches the files and automatically updates them when save is clicked
+
+gulp.task('watch', () => {
+  browserSync.init({
+      server: {
+          baseDir: "./"
+      }
+  });
+
+gulp.watch('**/*.*').on("change", reload);  
+gulp.watch(['src/styles/scss/**/*.scss'],
+gulp.parallel(['minify-sass']));
+
+});
 
 // compresses css file
 

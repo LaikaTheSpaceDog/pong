@@ -1,0 +1,32 @@
+.scoreOdd {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    min-width: 150px;
+
+    .plainText {
+        padding-bottom: 1rem;
+    }
+
+    .button {
+        align-self: flex-end;
+    }
+}
+
+.scoreEven {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    align-self: flex-end;
+    min-width: 150px;
+
+    .plainText {
+        padding-bottom: 1rem;
+    }
+
+    .button {
+        align-self: flex-start;
+    }
+}
