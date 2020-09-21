@@ -1,0 +1,12 @@
+// @font-face {
+//     font-family: 'Press Start 2P';
+//     src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+//     font-weight: normal;
+//     font-style: cursive;
+// }
+
+$fontStack: 'Press Start 2P', Helvetica, sans-serif;
+
+.heading {
+    font-family: $fontStack;
+}
