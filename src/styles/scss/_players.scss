@@ -1,0 +1,20 @@
+.players {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    .list {
+        width: 30vw;
+    }
+
+    .input {
+        height: 2rem;
+    }
+
+    .button {
+        margin-top: 1rem;
+        justify-self: center;
+        display: block;
+    }
+}
