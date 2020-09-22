@@ -1,14 +1,11 @@
-const player = state => ({
+const player = (state, { players }) => ({
     ...state,
-    players: [
-        ...state.players,
-        state.input,
-    ]
+    players: players
 }) 
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "ADD_PLAYER": return player(state);
+        case "ADD_PLAYERS": return player(state, action);
         default: return state;
     }
 };

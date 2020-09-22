@@ -2,16 +2,10 @@ import { connect } from "react-redux";
 import Home from "./Home";
 import { addPlayer } from "../../data/actions";
 
-const mapStateToProps = ({players}) => {
-    return {
-        players: players
-    };
-};
-
 const mapDispatchToProps = dispatch => {
     return {
-        handleAddPlayer: () => dispatch(addPlayer()),
+        handleAdd: (data) => dispatch(addPlayer(data)),
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps )(Home);
+export default connect(null, mapDispatchToProps )(Home);

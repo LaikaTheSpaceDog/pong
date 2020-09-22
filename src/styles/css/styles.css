@@ -272,6 +272,11 @@ table {
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 3rem; }
+  .players .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; }
   .players .list {
     width: 30vw; }
   .players .input {
@@ -280,3 +285,9 @@ table {
     margin-top: 1rem;
     justify-self: center;
     display: block; }
+  .players .start {
+    margin-left: auto;
+    margin-right: auto; }
+  .players .break {
+    flex-basis: 100%;
+    height: 0; }

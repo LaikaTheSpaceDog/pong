@@ -1,5 +1,6 @@
-export const addPlayer = () => {
+export const addPlayer = ({ playerArray }) => {
     return {
-        type: "ADD_PLAYER"
+        type: "ADD_PLAYERS",
+        players: playerArray
     };
 };
