@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
 
@@ -11,7 +12,7 @@ const Landing = () => {
                 <div className="ball"></div>
             </section>
             <div className="centerButton">
-                <button className="button">Click to Enter</button>
+                <Link className="button" to="/home">Click to Enter</Link>
             </div>
         </>
     );

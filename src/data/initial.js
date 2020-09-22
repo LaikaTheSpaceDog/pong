@@ -1,3 +1,6 @@
 const initial = {
-    count: 0,
+    input: "",
+    players: [],
 }
+
+export default initial;
