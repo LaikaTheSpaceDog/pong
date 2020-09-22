@@ -287,7 +287,8 @@ table {
     display: block; }
   .players .start {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 3rem; }
   .players .break {
     flex-basis: 100%;
     height: 0; }

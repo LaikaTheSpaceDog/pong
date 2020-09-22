@@ -35,6 +35,8 @@ class Home extends Component {
     }
     
     render(){
+        let { error } = this.props;
+        
         return (
             <article className="body">
                 <h1 className="heading">(Ping)-Pong</h1>
@@ -59,6 +61,11 @@ class Home extends Component {
                         }
                     </form>
                 </section>
+                {error !== true ? null :
+                        <>
+                            <p className="plainText">Please make sure the number of players added is 4 or more and a power of 2</p>
+                        </>
+                }
             </article>
         );
     }
