@@ -10,6 +10,12 @@
   font-size: 1.5rem;
   color: white; }
 
+.player {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 0; }
+
 .listItem {
   font-family: "Press Start 2P", Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -175,14 +181,27 @@ table {
   display: flex;
   flex-direction: column;
   width: 50%;
-  min-width: 560px; }
+  min-width: 500px;
+  max-width: 500px;
+  padding-top: 3rem; }
+
+.cardGroup {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.cardHeader {
+  width: 100%;
+  min-width: 260px;
+  text-align: center; }
 
 .scoreOdd {
   text-align: center;
   display: flex;
   flex-direction: column;
   width: 5vw;
-  min-width: 150px; }
+  min-width: 120px; }
   .scoreOdd .plainText {
     padding-bottom: 1rem; }
   .scoreOdd .button {
@@ -194,7 +213,8 @@ table {
   flex-direction: column;
   width: 5vw;
   align-self: flex-end;
-  min-width: 150px; }
+  min-width: 120px;
+  z-index: 1; }
   .scoreEven .plainText {
     padding-bottom: 1rem; }
   .scoreEven .button {

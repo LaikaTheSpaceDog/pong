@@ -1,6 +1,7 @@
 const initial = {
     players: [],
-    error: false
+    error: false,
+    submitted: false
 }
 
 export default initial;

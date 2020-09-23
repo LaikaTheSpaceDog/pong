@@ -14,6 +14,13 @@ $fontStack: 'Press Start 2P', Helvetica, sans-serif;
     color: white;
 }
 
+.player {
+    font-family: $fontStack;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 0;
+}
+
 .listItem {
     font-family: $fontStack;
     font-size: 1.5rem;

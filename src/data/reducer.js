@@ -6,7 +6,8 @@ const powerOf2MoreThan4 = n => {
 const player = (state, { players }) => ({
     ...state,
     players: powerOf2MoreThan4(players.length) ? players : [],
-    error: !powerOf2MoreThan4(players.length)
+    error: !powerOf2MoreThan4(players.length),
+    submitted: powerOf2MoreThan4(players.length)
 }) 
 
 const reducer = (state, action) => {
