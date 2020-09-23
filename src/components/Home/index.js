@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import Home from "./Home";
-import { addPlayer } from "../../data/actions";
+import { addPlayer, createTeams } from "../../data/actions";
 
 const mapStateToProps = state => {
     return {
@@ -12,6 +12,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         handleAdd: (data) => dispatch(addPlayer(data)),
+        handleTeams: (data) => dispatch(createTeams(data))
     }
 }
 

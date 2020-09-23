@@ -139,6 +139,8 @@ table {
   justify-content: center;
   align-items: center;
   padding-top: 1.5rem; }
+  .centerButton .reset {
+    margin-top: 5rem; }
 
 .card {
   border: 1px white solid;

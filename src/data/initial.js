@@ -1,7 +1,10 @@
 const initial = {
     players: [],
-    error: false,
-    submitted: false
+    shuffledPlayers: [],
+    games: [],
+    round: 1,
+    submitted: false,
+    error: false
 }
 
 export default initial;

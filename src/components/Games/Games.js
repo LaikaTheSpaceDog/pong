@@ -13,40 +13,39 @@ class Games extends Component {
     
     render(){
         
-        let { players } = this.props;
-        const games = [];
-        for(let i = 0; i < players.length / 2; i += 1){
-            games.push (
-                <article class="fullCard">
-                <header class="cardHeader">
-                    <h1 class="gameHeader">Game 1</h1>
-                </header>
-                <section class="cardScore">
-                    <section class="scoreOdd">
-                        <button class="button" >+</button>
-                        <p class="player">Player 1</p>
-                    </section>
-                    <section class="card here">
-                        <p class="score1">01</p>
-                        <p class="score2">03</p>
-                            <div class="bar bar1"></div>
-                            <div class="bar bar2"></div>
-                    </section>
-                    <section class="scoreEven">
-                        <p class="player">Player 2</p>
-                        <button class="button" >+</button>
-                    </section>
-                </section>
-            </article>
-            );
-        };
+        let { games, handleReset, round } = this.props;
 
         return (
             <>
-                <h1 className="heading">Round 1</h1>
+                <h1 className="heading">Round { round }</h1>
                 <section className="cardGroup">
-                    { games }
+                    { games.map((item, index) => (
+                        <article className="fullCard" key={ index }>
+                            <header className="cardHeader">
+                                <h1 className="gameHeader">Game { index + 1 }</h1>
+                            </header>
+                            <section className="cardScore">
+                                <section className="scoreOdd">
+                                    <button className="button" >+</button>
+                                    <p className="player">{ item[0] }</p>
+                                </section>
+                                <section className="card here">
+                                    <p className="score1">01</p>
+                                    <p className="score2">03</p>
+                                        <div className="bar bar1"></div>
+                                        <div className="bar bar2"></div>
+                                </section>
+                                <section className="scoreEven">
+                                    <p className="player">{ item[1] }</p>
+                                    <button className="button" >+</button>
+                                </section>
+                            </section>
+                        </article>
+                    ))}
                 </section>
+                <div className="centerButton">
+                    <button className="button reset" onClick={ handleReset }>New Competition</button>
+                </div>
             </>
         );
     }

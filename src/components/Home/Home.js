@@ -7,7 +7,8 @@ class Home extends Component {
 
         this.state = {
             playerName: "",
-            playerArray: []
+            playerArray: [],
+            shuffledPlayers: []
         };
 
         this.handlePlayer = this.handlePlayer.bind(this);
@@ -25,13 +26,18 @@ class Home extends Component {
                 ...this.state.playerArray,
                 this.state.playerName
             ],
-            playerName: "" 
+            playerName: "",
+            shuffledPlayers: [
+                ...this.state.shuffledPlayers,
+                this.state.playerName
+            ] 
         });
     };
 
     handleSubmit(e){
         e.preventDefault();
         this.props.handleAdd({...this.state});
+        this.props.handleTeams({...this.state});
     }
     
     render(){
