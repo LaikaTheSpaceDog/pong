@@ -14,8 +14,15 @@
   font-family: "Press Start 2P", Helvetica, sans-serif;
   font-size: 1.5rem;
   color: white;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
+  margin-left: 1rem;
   list-style-type: square; }
+
+.listTitle {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem 0; }
 
 .score1 {
   font-family: "Press Start 2P", Helvetica, sans-serif;
@@ -38,6 +45,22 @@
   font-size: 1.5rem;
   color: white;
   text-align: center; }
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+  animation-iteration-count: 3; }
+
+@keyframes blinkingText {
+  0% {
+    color: white; }
+  49% {
+    color: white; }
+  60% {
+    color: transparent; }
+  99% {
+    color: transparent; }
+  100% {
+    color: white; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -87,7 +110,7 @@ table {
   border-spacing: 0; }
 
 .body {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 5rem;
   background-color: black; }
 
 .list {

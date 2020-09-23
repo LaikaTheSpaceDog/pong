@@ -40,7 +40,7 @@ class Home extends Component {
         return (
             <article className="body">
                 <h1 className="heading">(Ping)-Pong</h1>
-                <p className="plainText">Let's play Pong (or ping-pong...)! To create your tournament, please enter the names of all players below. You will need a minimum of 2 players and the total number of players must be a power of 2 e.g. 4, 8, 16, 32...</p>
+                <p className="plainText">Let's play Pong (or ping-pong...)! To create your tournament, please enter the names of all players below. <span className={ error ? "plainText blinking" : "plainText" }>You will need a minimum of 2 players and the total number of players must be a power of 2 e.g. 4, 8, 16, 32...</span></p>
                 <section className="players">
                     <form className="form" onSubmit={ this.handleSubmit }>
                         <div className="playerForm">
@@ -51,6 +51,7 @@ class Home extends Component {
                         {this.state.playerArray.length === 0 ? null :               
                             <>
                                 <ul className="list">
+                                    <p className="listTitle">Players:</p>
                                     {this.state.playerArray.map((item, index) => (
                                         <li className="listItem" key={ index }>{ item }</li>
                                     ))}
@@ -61,11 +62,6 @@ class Home extends Component {
                         }
                     </form>
                 </section>
-                {error !== true ? null :
-                        <>
-                            <p className="plainText">Please make sure the number of players added is 4 or more and a power of 2</p>
-                        </>
-                }
             </article>
         );
     }
