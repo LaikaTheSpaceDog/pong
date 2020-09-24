@@ -19,18 +19,15 @@ export const reset = () => {
     };
 };
 
-export const score1 = ({ index, player1Name }) => {
+export const submitWinner = ({ winnerName }) => {
     return {
-        type: "INCREMENT1",
-        gameNum: index,
-        player1Name: player1Name
+        type: "WINNER",
+        winner: winnerName
     };
 };
 
-export const score2 = ({ index, player2Name }) => {
+export const nextRound = () => {
     return {
-        type: "INCREMENT2",
-        gameNum: index,
-        player2Name: player2Name
+        type: "NEXT"
     };
 };

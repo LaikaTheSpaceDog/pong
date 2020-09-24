@@ -134,8 +134,13 @@ table {
   border: white 1px solid;
   text-decoration: none; }
 
+.win {
+  width: 40%;
+  margin-top: 1.5rem; }
+
 .centerButton {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 1.5rem; }

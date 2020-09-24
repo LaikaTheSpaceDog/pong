@@ -1,20 +1,21 @@
 import { connect } from "react-redux";
 import Games from "./Games";
-import { reset, score1, score2 } from "../../data/actions";
+import { reset, submitWinner, nextRound } from "../../data/actions";
 
 const mapStateToProps = state => {
     return {
         players: state.players,
         games: state.games,
-        round: state.round
+        round: state.round,
+        winners: state.winners
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         handleReset: (data) => dispatch(reset(data)),
-        handleIncrement1: (player1Name) => dispatch(score1(player1Name)),
-        handleIncrement2: (player2Name) => dispatch(score2(player2Name))
+        handleSubmit: (data) => dispatch(submitWinner(data)),
+        handleNextRound: (data) => dispatch(nextRound(data))
     }
 }
 
