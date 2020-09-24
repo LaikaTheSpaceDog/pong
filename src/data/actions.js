@@ -18,3 +18,19 @@ export const reset = () => {
         type: "RESET"
     };
 };
+
+export const score1 = ({ index, player1Name }) => {
+    return {
+        type: "INCREMENT1",
+        gameNum: index,
+        player1Name: player1Name
+    };
+};
+
+export const score2 = ({ index, player2Name }) => {
+    return {
+        type: "INCREMENT2",
+        gameNum: index,
+        player2Name: player2Name
+    };
+};

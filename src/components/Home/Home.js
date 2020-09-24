@@ -8,7 +8,8 @@ class Home extends Component {
         this.state = {
             playerName: "",
             playerArray: [],
-            shuffledPlayers: []
+            shuffledPlayers: [],
+            idCounter: 1
         };
 
         this.handlePlayer = this.handlePlayer.bind(this);
@@ -24,13 +25,22 @@ class Home extends Component {
         this.setState({ 
             playerArray: [
                 ...this.state.playerArray,
-                this.state.playerName
+                { 
+                    id: this.state.idCounter,
+                    name: this.state.playerName,
+                    score: 0
+                }
             ],
             playerName: "",
             shuffledPlayers: [
                 ...this.state.shuffledPlayers,
-                this.state.playerName
-            ] 
+                {
+                    id: this.state.idCounter,
+                    name: this.state.playerName,
+                    score: 0
+                }
+            ],
+            idCounter: this.state.idCounter + 1
         });
     };
 
@@ -59,7 +69,7 @@ class Home extends Component {
                                 <ul className="list">
                                     <p className="listTitle">Players:</p>
                                     {this.state.playerArray.map((item, index) => (
-                                        <li className="listItem" key={ index }>{ item }</li>
+                                        <li className="listItem" key={ index }>{ item.name }</li>
                                     ))}
                                 </ul>
                                 <div className="break"></div>
