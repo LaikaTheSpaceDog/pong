@@ -4,7 +4,6 @@ import { addPlayer, createTeams } from "../../data/actions";
 
 const mapStateToProps = state => {
     return {
-        error: state.error,
         players: state.players
     };
 };

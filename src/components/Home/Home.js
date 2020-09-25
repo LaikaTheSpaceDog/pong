@@ -8,7 +8,8 @@ class Home extends Component {
         this.state = {
             playerName: "",
             playerArray: [],
-            shuffledPlayers: []
+            shuffledPlayers: [],
+            playersError: false
         };
 
         this.handlePlayer = this.handlePlayer.bind(this);
@@ -35,19 +36,37 @@ class Home extends Component {
         });
     };
 
+    powerOf2MoreThan4 = n => {
+        return n < 4 ? false : (
+        n && (n & (n - 1)) === 0);
+    }
+    
     handleSubmit(e){
         e.preventDefault();
-        this.props.handleAdd({...this.state});
-        this.props.handleTeams({...this.state});
+        if(this.powerOf2MoreThan4(this.state.playerArray.length)){
+            this.props.handleAdd({...this.state});
+            this.props.handleTeams({...this.state});  
+        } else {
+            this.setState({
+                ...this.state,
+                playersError: true
+            });
+            setTimeout(() => {
+                this.setState({
+                    ...this.state,
+                    playersError: false
+                });
+            }, 3000);
+        };
     }
     
     render(){
-        let { error } = this.props;
+        let { playersError } = this.state;
         
         return (
             <article className="body">
                 <h1 className="heading">(Ping)-Pong</h1>
-                <p className="plainText">Let's play Pong (or ping-pong...)! To create your tournament, please enter the names of all players below. <span className={ error ? "plainText blinking" : "plainText" }>You will need a minimum of 4 players and the total number of players must be a power of 2 e.g. 4, 8, 16, 32...</span></p>
+                <p className="plainText">Let's play Pong (or ping-pong...)! To create your tournament, please enter the names of all players below. <span className={ playersError ? "plainText blinking" : "plainText" }>You will need a minimum of 4 players and the total number of players must be a power of 2 e.g. 4, 8, 16, 32...</span></p>
                 <section className="players">
                     <form className="form" onSubmit={ this.handleSubmit }>
                         <div className="playerForm">

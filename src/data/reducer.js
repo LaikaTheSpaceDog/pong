@@ -1,10 +1,5 @@
 import initial from './initial';
 
-const powerOf2MoreThan4 = n => {
-    return n < 4 ? false : (
-    n && (n & (n - 1)) === 0);
-}
-
 // Given an array of players, return an array of random pairs
 const randomPairs = players => {
     shuffle( players );
@@ -29,9 +24,8 @@ const shuffle = array => {
 
 const submitPlayers = (state, { players }) => ({
     ...state,
-    players: powerOf2MoreThan4(players.length) ? players : [],
-    submitted: powerOf2MoreThan4(players.length),
-    error: !powerOf2MoreThan4(players.length),
+    players: players,
+    submitted: true
 })
 
 const generateFirstRound = (state, { shuffledPlayers }) => ({
