@@ -1,11 +1,10 @@
 import { connect } from "react-redux";
 import App from "./App";
 
-const mapStateToProps = ({ submitted, winners, games }) => {
+const mapStateToProps = ({ submitted, finished }) => {
     return {
         submitted: submitted,
-        winners: winners,
-        games: games
+        finished: finished
     };
 };
 

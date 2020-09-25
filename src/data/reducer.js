@@ -45,12 +45,18 @@ const winner = (state, { winner }) => ({
     ]
 })
 
+const finished = (state) => ({
+    ...state,
+    finished: state.winners.length === 1 && state.games.length === 1
+})
+
+
 const nextRound = state => ({
     ...state,
     players: state.winners,
     winners: [],
     round: state.round + 1,
-    games: randomPairs(state.winners)
+    games: randomPairs(state.winners),
 })
 
 const reducer = (state, action) => {
@@ -58,7 +64,7 @@ const reducer = (state, action) => {
         case "ADD_PLAYERS": return submitPlayers(state, action);
         case "CREATE_GAMES": return generateFirstRound(state, action);
         case "RESET": return reset();
-        case "WINNER": return winner(state, action);
+        case "WINNER": return finished(winner(state, action));
         case "NEXT": return nextRound(state);
         default: return state;
     }

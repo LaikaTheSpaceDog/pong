@@ -7,8 +7,7 @@ class Games extends Component {
         super(props);
 
         this.state = {
-            allSubmitted: false,
-            games: this.props.games
+            allSubmitted: false
         };
 
         this.handleAllSubmitted = this.handleAllSubmitted.bind(this);
@@ -48,9 +47,8 @@ class Games extends Component {
                     ))}
                 </section>
                 <div className="centerButton">
-                    { winners.length === games.length ? 
-                        ( winners.length === 1 ? <p className="plainText">Congratulations {winners[0]}!</p> : 
-                        <button className="button" onClick={ handleNextRound }>Next Round</button>) 
+                    { winners.length === games.length ?  
+                        <button className="button" onClick={ handleNextRound }>Next Round</button>
                     : null }
                     <button className="button reset" onClick={ handleReset }>New Competition</button>
                 </div>
