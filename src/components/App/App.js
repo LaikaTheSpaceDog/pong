@@ -4,8 +4,9 @@ import "../../styles/css/styles.min.css"
 import Landing from "../Landing";
 import Home from "../Home";
 import Games from "../Games";
+import Winner from "../Winner";
 
-const App = ({ submitted }) => (
+const App = ({ submitted, winners, games }) => (
   <Router>
     <Switch>
       <Route exact path = "/">
@@ -13,8 +14,10 @@ const App = ({ submitted }) => (
       </Route>
       <Route exact path = "/home">
         {
-          submitted ?
-          <Games /> :
+          submitted ? (
+            winners.length !== games.length ? <Games /> : <Winner />
+          )
+          :
           <Home />
         }
       </Route>
