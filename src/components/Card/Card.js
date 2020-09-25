@@ -60,8 +60,19 @@ class Card extends Component {
         })
     }
 
+    // handleNext(){
+    //     this.setState({
+    //         ...this.state,
+    //         player1: 0,
+    //         player2: 0,
+    //         winner: 0,
+    //         winnerName: "",
+    //         submitted: false,
+    //     })
+    // }
+
     componentDidUpdate(prevProps){
-        if(this.props.game !== prevProps.game){
+        if(this.props.id !== prevProps.id){
             this.setState({
                 ...this.state,
                 submitted: false,
@@ -108,7 +119,7 @@ class Card extends Component {
                                 <button className="button win" onClick={ this.handleSubmit } type="submit">Submit</button>
                             </> :
                             <p className="plainText">Scores submitted!</p>
-                        )};
+                        )}
                     </div>
                 </article>
             </>

@@ -5,26 +5,22 @@ $fontStack: 'Press Start 2P', Helvetica, sans-serif;
     font-size: 4rem;
     text-align: center;
     padding: 1em;
-    color: white;
 }
 
 .plainText {
     font-family: $fontStack;
     font-size: 1.5rem;
-    color: white;
 }
 
 .player {
     font-family: $fontStack;
     font-size: 1rem;
-    color: white;
     padding: 0.5rem 0;
 }
 
 .listItem {
     font-family: $fontStack;
     font-size: 1.5rem;
-    color: white;
     padding: 0.5rem 0;
     margin-left: 1rem;
     list-style-type: square;
@@ -33,14 +29,12 @@ $fontStack: 'Press Start 2P', Helvetica, sans-serif;
 .listTitle {
     font-family: $fontStack;
     font-size: 1.5rem;
-    color: white;
     padding: 0.5rem 0;
 }
 
 .score1 {
     font-family: $fontStack;
     font-size: 1.5rem;
-    color: white;
     grid-column: 7 / 10;
     grid-row: 2 / 5;
     text-align: left;
@@ -49,7 +43,6 @@ $fontStack: 'Press Start 2P', Helvetica, sans-serif;
 .score2 {
     font-family: $fontStack;
     font-size: 1.5rem;
-    color: white;
     grid-column: 12 / 15;
     grid-row: 2 / 5;
     text-align: right;
@@ -58,7 +51,6 @@ $fontStack: 'Press Start 2P', Helvetica, sans-serif;
 .gameHeader {
     font-family: $fontStack;
     font-size: 1.5rem;
-    color: white;
     text-align: center;
 }
 

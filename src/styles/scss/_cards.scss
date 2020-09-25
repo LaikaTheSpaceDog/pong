@@ -1,5 +1,5 @@
 .card {
-    border: 1px white solid;
+    border: 1px solid;
     width: 20vw;
     height: 35vh;
     display: grid;
@@ -17,7 +17,7 @@
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 2px dotted white;
+    border-left: 2px dotted;
     transform: translate(-50%);
 }
 
