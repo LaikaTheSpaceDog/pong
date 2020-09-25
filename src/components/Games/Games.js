@@ -25,21 +25,33 @@ class Games extends Component {
         };
     };
 
+    round(){
+        let games = this.props.games;
+        let round = this.props.round;
+        return(
+        games.length === 1 ? "Final" :
+        games.length === 2 ? "Semi Finals" :
+        games.length === 4 ? "Quarter Finals" : `Round ${round}`
+        );
+    }
+
     render(){
         
-        let { games, handleReset, round, handleSubmit, handleNextRound, winners } = this.props;
+        let { games, handleReset, handleSubmit, handleNextRound, winners } = this.props;
 
         return (
             <>
-                <h1 className="heading">Round { round }</h1>
+                <h1 className="heading">{ this.round() }</h1>
                 <section className="cardGroup">
                     { games.map((item, index) => (
                         <Card handleSubmit={ handleSubmit } key={ index } game={ index } id={ `${index}${item.player1}${item.player2}` } player1Name={ item.player1 } player2Name={ item.player2 } />
                     ))}
                 </section>
                 <div className="centerButton">
-                    { winners.length !== 1 ? <button className="button" onClick={ handleNextRound }>Next Round</button> :
-                    <p className="plainText">{ winners[0] } Wins! </p> }
+                    { winners.length === games.length ? 
+                        ( winners.length === 1 ? <p className="plainText">Congratulations {winners[0]}!</p> : 
+                        <button className="button" onClick={ handleNextRound }>Next Round</button>) 
+                    : null }
                     <button className="button reset" onClick={ handleReset }>New Competition</button>
                 </div>
             </>

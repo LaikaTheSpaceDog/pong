@@ -60,17 +60,6 @@ class Card extends Component {
         })
     }
 
-    // handleNext(){
-    //     this.setState({
-    //         ...this.state,
-    //         player1: 0,
-    //         player2: 0,
-    //         winner: 0,
-    //         winnerName: "",
-    //         submitted: false,
-    //     })
-    // }
-
     componentDidUpdate(prevProps){
         if(this.props.id !== prevProps.id){
             this.setState({
