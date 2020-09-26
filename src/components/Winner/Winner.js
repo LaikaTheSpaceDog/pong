@@ -4,7 +4,7 @@ const Winner = ({ winners, handleReset }) => {
 
     return(
         <>
-            <h1 className="heading">Congratulations { winners[0] }!</h1>
+            <h1 className="heading">Well Done { winners[0] }!</h1>
             <section className="pyro">
                 <div className="before"></div>
                 <div className="after"></div>

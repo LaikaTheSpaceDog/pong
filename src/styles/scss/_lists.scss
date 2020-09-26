@@ -4,3 +4,20 @@
     width: 100%;
     box-sizing: border-box;
 }
+
+.listLine {
+    display: flex;
+    align-items: center;
+
+    .xButton {
+        margin-left: 1rem;
+    }
+
+}
+
+.listLine:hover {
+
+    .xButton{
+        display: block;
+    }
+}

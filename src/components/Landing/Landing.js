@@ -5,7 +5,7 @@ const Landing = () => {
 
     return(
         <>
-            <h1 className="heading">(Ping)-Pong</h1>
+            <h1 className="heading landing">(Ping)-Pong</h1>
             <section className="cardLanding here">
                 <div className="rightBar"></div>
                 <div className="leftBar"></div>

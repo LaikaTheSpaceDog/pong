@@ -8,6 +8,14 @@
   font-family: "Press Start 2P", Helvetica, sans-serif;
   font-size: 1.5rem; }
 
+.centerText {
+  text-align: center;
+  margin: auto 0;
+  padding-bottom: 2rem; }
+
+.warn {
+  padding-top: 2rem; }
+
 .player {
   font-family: "Press Start 2P", Helvetica, sans-serif;
   font-size: 1rem;
@@ -116,6 +124,15 @@ table {
   width: 100%;
   box-sizing: border-box; }
 
+.listLine {
+  display: flex;
+  align-items: center; }
+  .listLine .xButton {
+    margin-left: 1rem; }
+
+.listLine:hover .xButton {
+  display: block; }
+
 .button {
   font-family: "Press Start 2P", Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -136,7 +153,18 @@ table {
   align-items: center;
   padding-top: 1.5rem; }
   .centerButton .reset {
-    margin-top: 5rem; }
+    margin: 2.5rem 0; }
+
+.xButton {
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  display: none;
+  border: none;
+  text-decoration: none;
+  width: 1rem;
+  height: 1rem; }
 
 .card {
   border: 1px solid;
@@ -181,7 +209,7 @@ table {
   width: 50%;
   min-width: 500px;
   max-width: 500px;
-  padding-top: 3rem; }
+  padding-top: 2rem; }
 
 .cardGroup {
   display: flex;
@@ -373,23 +401,23 @@ body {
 
 @-webkit-keyframes bang {
   to {
-    box-shadow: -96px -289.66667px white, 80px -393.66667px white, -67px 6.33333px white, 240px -413.66667px white, 29px 30.33333px white, 83px -407.66667px white, 110px -253.66667px white, -64px -365.66667px white, -233px 4.33333px white, -98px -78.66667px white, -50px -249.66667px white, -80px -340.66667px white, 15px -306.66667px white, 90px -34.66667px white, -44px -104.66667px white, -229px 52.33333px white, -167px -320.66667px white, -70px -352.66667px white, -164px 36.33333px white, -72px -180.66667px white, -179px -6.66667px white, 214px -363.66667px white, 139px -302.66667px white, -116px -316.66667px white, -112px -51.66667px white, 151px 48.33333px white, 160px -194.66667px white, -93px -208.66667px white, -164px 51.33333px white, -75px -87.66667px white, -201px -145.66667px white, -175px -399.66667px white, 247px 3.33333px white, 232px -244.66667px white, 36px -122.66667px white, -19px -305.66667px white, 166px -83.66667px white, 96px -403.66667px white, -22px -107.66667px white, 231px -153.66667px white, 144px 82.33333px white, -94px -348.66667px white, -239px -87.66667px white, -188px -139.66667px white, 122px -297.66667px white, 21px -286.66667px white, 1px -262.66667px white, -11px 26.33333px white, -72px -292.66667px white, 48px -80.66667px white, -70px -191.66667px white; } }
+    box-shadow: 142px -194.66667px white, 58px -51.66667px white, 126px -73.66667px white, 143px -184.66667px white, 36px 0.33333px white, 234px -251.66667px white, 59px -110.66667px white, -52px -219.66667px white, 86px -365.66667px white, 188px -22.66667px white, -156px 19.33333px white, 74px -149.66667px white, -156px -392.66667px white, 88px -156.66667px white, 185px -11.66667px white, 80px -17.66667px white, 223px -22.66667px white, -169px 67.33333px white, -238px -219.66667px white, 219px -319.66667px white, -114px -141.66667px white, 4px 22.33333px white, -153px -408.66667px white, 169px -76.66667px white, 115px 35.33333px white, -90px -31.66667px white, 69px -227.66667px white, 221px -174.66667px white, -197px 40.33333px white, 172px 77.33333px white, -89px 26.33333px white, -64px -2.66667px white, 197px -99.66667px white, 247px -258.66667px white, 98px -385.66667px white, 56px -128.66667px white, -60px -52.66667px white, 183px -22.66667px white, -211px 44.33333px white, 24px -200.66667px white, -176px -174.66667px white, -101px -241.66667px white, 196px -93.66667px white, -248px -177.66667px white, 173px -329.66667px white, -186px -389.66667px white, -83px -118.66667px white, -43px -365.66667px white, -206px -215.66667px white, 194px -134.66667px white, -244px -384.66667px white; } }
 
 @-moz-keyframes bang {
   to {
-    box-shadow: -96px -289.66667px white, 80px -393.66667px white, -67px 6.33333px white, 240px -413.66667px white, 29px 30.33333px white, 83px -407.66667px white, 110px -253.66667px white, -64px -365.66667px white, -233px 4.33333px white, -98px -78.66667px white, -50px -249.66667px white, -80px -340.66667px white, 15px -306.66667px white, 90px -34.66667px white, -44px -104.66667px white, -229px 52.33333px white, -167px -320.66667px white, -70px -352.66667px white, -164px 36.33333px white, -72px -180.66667px white, -179px -6.66667px white, 214px -363.66667px white, 139px -302.66667px white, -116px -316.66667px white, -112px -51.66667px white, 151px 48.33333px white, 160px -194.66667px white, -93px -208.66667px white, -164px 51.33333px white, -75px -87.66667px white, -201px -145.66667px white, -175px -399.66667px white, 247px 3.33333px white, 232px -244.66667px white, 36px -122.66667px white, -19px -305.66667px white, 166px -83.66667px white, 96px -403.66667px white, -22px -107.66667px white, 231px -153.66667px white, 144px 82.33333px white, -94px -348.66667px white, -239px -87.66667px white, -188px -139.66667px white, 122px -297.66667px white, 21px -286.66667px white, 1px -262.66667px white, -11px 26.33333px white, -72px -292.66667px white, 48px -80.66667px white, -70px -191.66667px white; } }
+    box-shadow: 142px -194.66667px white, 58px -51.66667px white, 126px -73.66667px white, 143px -184.66667px white, 36px 0.33333px white, 234px -251.66667px white, 59px -110.66667px white, -52px -219.66667px white, 86px -365.66667px white, 188px -22.66667px white, -156px 19.33333px white, 74px -149.66667px white, -156px -392.66667px white, 88px -156.66667px white, 185px -11.66667px white, 80px -17.66667px white, 223px -22.66667px white, -169px 67.33333px white, -238px -219.66667px white, 219px -319.66667px white, -114px -141.66667px white, 4px 22.33333px white, -153px -408.66667px white, 169px -76.66667px white, 115px 35.33333px white, -90px -31.66667px white, 69px -227.66667px white, 221px -174.66667px white, -197px 40.33333px white, 172px 77.33333px white, -89px 26.33333px white, -64px -2.66667px white, 197px -99.66667px white, 247px -258.66667px white, 98px -385.66667px white, 56px -128.66667px white, -60px -52.66667px white, 183px -22.66667px white, -211px 44.33333px white, 24px -200.66667px white, -176px -174.66667px white, -101px -241.66667px white, 196px -93.66667px white, -248px -177.66667px white, 173px -329.66667px white, -186px -389.66667px white, -83px -118.66667px white, -43px -365.66667px white, -206px -215.66667px white, 194px -134.66667px white, -244px -384.66667px white; } }
 
 @-o-keyframes bang {
   to {
-    box-shadow: -96px -289.66667px white, 80px -393.66667px white, -67px 6.33333px white, 240px -413.66667px white, 29px 30.33333px white, 83px -407.66667px white, 110px -253.66667px white, -64px -365.66667px white, -233px 4.33333px white, -98px -78.66667px white, -50px -249.66667px white, -80px -340.66667px white, 15px -306.66667px white, 90px -34.66667px white, -44px -104.66667px white, -229px 52.33333px white, -167px -320.66667px white, -70px -352.66667px white, -164px 36.33333px white, -72px -180.66667px white, -179px -6.66667px white, 214px -363.66667px white, 139px -302.66667px white, -116px -316.66667px white, -112px -51.66667px white, 151px 48.33333px white, 160px -194.66667px white, -93px -208.66667px white, -164px 51.33333px white, -75px -87.66667px white, -201px -145.66667px white, -175px -399.66667px white, 247px 3.33333px white, 232px -244.66667px white, 36px -122.66667px white, -19px -305.66667px white, 166px -83.66667px white, 96px -403.66667px white, -22px -107.66667px white, 231px -153.66667px white, 144px 82.33333px white, -94px -348.66667px white, -239px -87.66667px white, -188px -139.66667px white, 122px -297.66667px white, 21px -286.66667px white, 1px -262.66667px white, -11px 26.33333px white, -72px -292.66667px white, 48px -80.66667px white, -70px -191.66667px white; } }
+    box-shadow: 142px -194.66667px white, 58px -51.66667px white, 126px -73.66667px white, 143px -184.66667px white, 36px 0.33333px white, 234px -251.66667px white, 59px -110.66667px white, -52px -219.66667px white, 86px -365.66667px white, 188px -22.66667px white, -156px 19.33333px white, 74px -149.66667px white, -156px -392.66667px white, 88px -156.66667px white, 185px -11.66667px white, 80px -17.66667px white, 223px -22.66667px white, -169px 67.33333px white, -238px -219.66667px white, 219px -319.66667px white, -114px -141.66667px white, 4px 22.33333px white, -153px -408.66667px white, 169px -76.66667px white, 115px 35.33333px white, -90px -31.66667px white, 69px -227.66667px white, 221px -174.66667px white, -197px 40.33333px white, 172px 77.33333px white, -89px 26.33333px white, -64px -2.66667px white, 197px -99.66667px white, 247px -258.66667px white, 98px -385.66667px white, 56px -128.66667px white, -60px -52.66667px white, 183px -22.66667px white, -211px 44.33333px white, 24px -200.66667px white, -176px -174.66667px white, -101px -241.66667px white, 196px -93.66667px white, -248px -177.66667px white, 173px -329.66667px white, -186px -389.66667px white, -83px -118.66667px white, -43px -365.66667px white, -206px -215.66667px white, 194px -134.66667px white, -244px -384.66667px white; } }
 
 @-ms-keyframes bang {
   to {
-    box-shadow: -96px -289.66667px white, 80px -393.66667px white, -67px 6.33333px white, 240px -413.66667px white, 29px 30.33333px white, 83px -407.66667px white, 110px -253.66667px white, -64px -365.66667px white, -233px 4.33333px white, -98px -78.66667px white, -50px -249.66667px white, -80px -340.66667px white, 15px -306.66667px white, 90px -34.66667px white, -44px -104.66667px white, -229px 52.33333px white, -167px -320.66667px white, -70px -352.66667px white, -164px 36.33333px white, -72px -180.66667px white, -179px -6.66667px white, 214px -363.66667px white, 139px -302.66667px white, -116px -316.66667px white, -112px -51.66667px white, 151px 48.33333px white, 160px -194.66667px white, -93px -208.66667px white, -164px 51.33333px white, -75px -87.66667px white, -201px -145.66667px white, -175px -399.66667px white, 247px 3.33333px white, 232px -244.66667px white, 36px -122.66667px white, -19px -305.66667px white, 166px -83.66667px white, 96px -403.66667px white, -22px -107.66667px white, 231px -153.66667px white, 144px 82.33333px white, -94px -348.66667px white, -239px -87.66667px white, -188px -139.66667px white, 122px -297.66667px white, 21px -286.66667px white, 1px -262.66667px white, -11px 26.33333px white, -72px -292.66667px white, 48px -80.66667px white, -70px -191.66667px white; } }
+    box-shadow: 142px -194.66667px white, 58px -51.66667px white, 126px -73.66667px white, 143px -184.66667px white, 36px 0.33333px white, 234px -251.66667px white, 59px -110.66667px white, -52px -219.66667px white, 86px -365.66667px white, 188px -22.66667px white, -156px 19.33333px white, 74px -149.66667px white, -156px -392.66667px white, 88px -156.66667px white, 185px -11.66667px white, 80px -17.66667px white, 223px -22.66667px white, -169px 67.33333px white, -238px -219.66667px white, 219px -319.66667px white, -114px -141.66667px white, 4px 22.33333px white, -153px -408.66667px white, 169px -76.66667px white, 115px 35.33333px white, -90px -31.66667px white, 69px -227.66667px white, 221px -174.66667px white, -197px 40.33333px white, 172px 77.33333px white, -89px 26.33333px white, -64px -2.66667px white, 197px -99.66667px white, 247px -258.66667px white, 98px -385.66667px white, 56px -128.66667px white, -60px -52.66667px white, 183px -22.66667px white, -211px 44.33333px white, 24px -200.66667px white, -176px -174.66667px white, -101px -241.66667px white, 196px -93.66667px white, -248px -177.66667px white, 173px -329.66667px white, -186px -389.66667px white, -83px -118.66667px white, -43px -365.66667px white, -206px -215.66667px white, 194px -134.66667px white, -244px -384.66667px white; } }
 
 @keyframes bang {
   to {
-    box-shadow: -96px -289.66667px white, 80px -393.66667px white, -67px 6.33333px white, 240px -413.66667px white, 29px 30.33333px white, 83px -407.66667px white, 110px -253.66667px white, -64px -365.66667px white, -233px 4.33333px white, -98px -78.66667px white, -50px -249.66667px white, -80px -340.66667px white, 15px -306.66667px white, 90px -34.66667px white, -44px -104.66667px white, -229px 52.33333px white, -167px -320.66667px white, -70px -352.66667px white, -164px 36.33333px white, -72px -180.66667px white, -179px -6.66667px white, 214px -363.66667px white, 139px -302.66667px white, -116px -316.66667px white, -112px -51.66667px white, 151px 48.33333px white, 160px -194.66667px white, -93px -208.66667px white, -164px 51.33333px white, -75px -87.66667px white, -201px -145.66667px white, -175px -399.66667px white, 247px 3.33333px white, 232px -244.66667px white, 36px -122.66667px white, -19px -305.66667px white, 166px -83.66667px white, 96px -403.66667px white, -22px -107.66667px white, 231px -153.66667px white, 144px 82.33333px white, -94px -348.66667px white, -239px -87.66667px white, -188px -139.66667px white, 122px -297.66667px white, 21px -286.66667px white, 1px -262.66667px white, -11px 26.33333px white, -72px -292.66667px white, 48px -80.66667px white, -70px -191.66667px white; } }
+    box-shadow: 142px -194.66667px white, 58px -51.66667px white, 126px -73.66667px white, 143px -184.66667px white, 36px 0.33333px white, 234px -251.66667px white, 59px -110.66667px white, -52px -219.66667px white, 86px -365.66667px white, 188px -22.66667px white, -156px 19.33333px white, 74px -149.66667px white, -156px -392.66667px white, 88px -156.66667px white, 185px -11.66667px white, 80px -17.66667px white, 223px -22.66667px white, -169px 67.33333px white, -238px -219.66667px white, 219px -319.66667px white, -114px -141.66667px white, 4px 22.33333px white, -153px -408.66667px white, 169px -76.66667px white, 115px 35.33333px white, -90px -31.66667px white, 69px -227.66667px white, 221px -174.66667px white, -197px 40.33333px white, 172px 77.33333px white, -89px 26.33333px white, -64px -2.66667px white, 197px -99.66667px white, 247px -258.66667px white, 98px -385.66667px white, 56px -128.66667px white, -60px -52.66667px white, 183px -22.66667px white, -211px 44.33333px white, 24px -200.66667px white, -176px -174.66667px white, -101px -241.66667px white, 196px -93.66667px white, -248px -177.66667px white, 173px -329.66667px white, -186px -389.66667px white, -83px -118.66667px white, -43px -365.66667px white, -206px -215.66667px white, 194px -134.66667px white, -244px -384.66667px white; } }
 
 @-webkit-keyframes gravity {
   to {
@@ -520,3 +548,80 @@ body {
   80%, 99.9% {
     margin-top: 30%;
     margin-left: 80%; } }
+
+@media only screen and (max-width: 600px) {
+  .body {
+    margin: 0 1rem;
+    text-align: center; }
+  .heading {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem; }
+  .plainText {
+    font-size: 1rem; }
+  .playerForm .button {
+    margin-left: auto;
+    margin-right: auto; }
+  .input {
+    font-size: 1rem;
+    width: 50vw;
+    height: 1rem; }
+  .players .list {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem; }
+  .players .input {
+    height: 1rem; }
+  .listTitle {
+    font-size: 1rem; }
+  .listItem {
+    font-size: 1rem; }
+  .button {
+    font-size: 1rem; }
+  .cardGroup {
+    flex-direction: column; }
+    .cardGroup .fullCard {
+      margin-right: auto;
+      margin-left: auto; }
+  .button.reset {
+    margin-bottom: 3rem; }
+  .cardLanding {
+    display: none; }
+  .heading.landing {
+    margin-top: 25vh; } }
+
+@media only screen and (max-width: 400px) {
+  .heading {
+    font-size: 1.25rem; }
+  .plainText {
+    font-size: 0.9rem; }
+  .button {
+    font-size: 0.9rem; }
+  .cardGroup {
+    align-items: center; }
+  .fullCard {
+    min-width: 250px;
+    align-items: center; }
+  .card {
+    min-width: 175px;
+    height: 200px; }
+  .gameHeader {
+    font-size: 1.25rem; }
+  .scoreOdd {
+    min-width: 15vw; }
+  .scoreEven {
+    min-width: 15vw; }
+  .player {
+    font-size: 0.5rem;
+    word-wrap: break-word; }
+  .button.reset {
+    margin-top: 0rem; }
+  .button.next {
+    margin-bottom: 2rem; }
+  .score1 {
+    font-size: 0.9rem; }
+  .score2 {
+    font-size: 0.9rem; }
+  .button.win {
+    width: 50vw; } }
