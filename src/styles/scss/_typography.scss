@@ -12,6 +12,12 @@ $fontStack: 'Press Start 2P', Helvetica, sans-serif;
     font-size: 1.5rem;
 }
 
+.centerText {
+    text-align: center;
+    margin: auto 0;
+    padding-bottom: 2rem;
+}
+
 .player {
     font-family: $fontStack;
     font-size: 1rem;
