@@ -24,3 +24,15 @@
         margin-top: 5rem;
     }
 }
+
+.xButton {
+    font-family: $fontStack;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    display: none;
+    border: none;
+    text-decoration: none;
+    width: 1rem;
+    height: 1rem;
+}

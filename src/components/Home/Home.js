@@ -9,13 +9,16 @@ class Home extends Component {
             playerName: "",
             playerArray: [],
             shuffledPlayers: [],
-            playersError: false
+            playersError: false,
+            hovering: 0
         };
 
         this.handlePlayer = this.handlePlayer.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleAddPlayer = this.handleAddPlayer.bind(this);
         this.handleClear = this.handleClear.bind(this);
+        this.handleFilter = this.handleFilter.bind(this);
+        this.handleHover = this.handleHover.bind(this);
     };
 
     handlePlayer(e){
@@ -69,6 +72,23 @@ class Home extends Component {
             shuffledPlayers: []
         })
     }
+
+    filter(arr, ind){
+        return arr.filter((_, index) => index !== ind );
+    }
+
+    handleHover(e){
+        this.setState({...this.state, hovering: + e.currentTarget.value})
+    }
+    
+    handleFilter(e){
+        let index = this.state.hovering;
+        this.setState({
+            ...this.state,
+            playerArray: this.filter(this.state.playerArray, index),
+            shuffledPlayers: this.filter(this.state.shuffledPlayers, index)
+        })
+    }
     
     render(){
         let { playersError } = this.state;
@@ -89,7 +109,7 @@ class Home extends Component {
                                 <ul className="list">
                                     <p className="listTitle">Players:</p>
                                     {this.state.playerArray.map((item, index) => (
-                                        <li className="listItem" key={ index }>{ item }</li>
+                                        <span className="listLine" key={ index }><li className="listItem">{ item }</li><button type="button" className="xButton" index={ index } value={ index } onMouseEnter={ this.handleHover } onClick={ this.handleFilter } >x</button></span>
                                     ))}
                                     <div className="centerButton">
                                         <button className="button" onClick={ this.handleClear }>Clear</button>
