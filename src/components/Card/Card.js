@@ -76,13 +76,13 @@ class Card extends Component {
     
     render(){
         
-        let { player1Name, player2Name, game } = this.props;
+        let { player1Name, player2Name, game, winners } = this.props;
         let { player1, player2, winner, submitted } = this.state;
 
         return (
             <>
                 <article className="fullCard">
-                    { submitted ? <p className="plainText centerText">Game { game +1 } Submitted</p> : 
+                    { winners.includes(player1Name || player2Name) ? <p className="plainText centerText">Game { game +1 } Submitted</p> : 
                         <>
                             <header className="cardHeader">
                                 <h1 className="gameHeader">Game { game + 1 }</h1>
