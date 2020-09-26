@@ -10,7 +10,8 @@ class Home extends Component {
             playerArray: [],
             shuffledPlayers: [],
             playersError: false,
-            hovering: 0
+            hovering: 0,
+            originalName: 2 // set initially to 2 as ternary below checking for true/false
         };
 
         this.handlePlayer = this.handlePlayer.bind(this);
@@ -25,18 +26,30 @@ class Home extends Component {
         this.setState({ playerName: e.currentTarget.value });
     };
 
+    originalName = (name) => {
+        return !this.state.playerArray.includes(name);
+    }
+
     handleAddPlayer(){
-        this.setState({ 
-            playerArray: [
-                ...this.state.playerArray,
-                    this.state.playerName
-            ],
-            playerName: "",
-            shuffledPlayers: [
-                ...this.state.shuffledPlayers,
-                    this.state.playerName,
-            ]
-        });
+        if(this.originalName(this.state.playerName)){
+            this.setState({ 
+                playerArray: [
+                    ...this.state.playerArray,
+                        this.state.playerName
+                ],
+                playerName: "",
+                shuffledPlayers: [
+                    ...this.state.shuffledPlayers,
+                        this.state.playerName,
+                ],
+                originalName: true
+            });
+        } else {
+            this.setState({
+                originalName: false,
+                playerName: ""
+            })
+        }
     };
 
     // Checks whether the number passed in is 4 or greater and also a power of 2 (e.g. 4, 8, 16, 32...)
@@ -103,6 +116,7 @@ class Home extends Component {
                             <label className="plainText">Enter Name:</label>
                             <input type="text" className="input" onChange={ this.handlePlayer } value={ this.state.playerName }/>
                             <button className="button" onClick={ this.handleAddPlayer } type="button">Add</button>
+                            {this.state.originalName ? null : <p className="plainText warn">Name already taken!</p>}
                         </div>
                         {this.state.playerArray.length === 0 ? null :               
                             <>
