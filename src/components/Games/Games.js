@@ -21,7 +21,7 @@ const Games = ({ games, handleReset, handleSubmit, handleNextRound, winners, rou
             </section>
             <div className="centerButton">
                 { winners.length === games.length ?  
-                    <button className="button" onClick={ handleNextRound }>Next Round</button>
+                    <button className="button next" onClick={ handleNextRound }>Next Round</button>
                 : null }
                 <button className="button reset" onClick={ handleReset }>New Competition</button>
             </div>

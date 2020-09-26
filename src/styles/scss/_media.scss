@@ -1,0 +1,133 @@
+@media only screen and (max-width: 600px) {
+    
+    .body {
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 3rem;
+    }
+    
+    .plainText {
+      font-size: 1rem;
+    }
+
+    .playerForm {
+
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .input {
+        font-size: 1rem;
+        width: 50vw;
+        height: 1rem;
+    }
+
+    .players {
+
+        .list {
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+        }
+        .input {
+            height: 1rem;
+        }
+    }
+
+    .listTitle {
+        font-size: 1rem;
+    }
+    
+    .listItem {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+
+    .cardGroup {
+        flex-direction: column;
+
+        .fullCard {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .button.reset {
+        margin-bottom: 3rem;
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    .heading{
+        font-size: 1.25rem;
+    }
+
+    .plainText{
+        font-size: 0.9rem;
+    }
+
+    .button{
+        font-size: 0.9rem;
+    }
+
+    .cardGroup{
+        align-items: center;
+    }
+
+    .fullCard{
+        min-width: 250px;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 175px;
+        height: 200px;
+    }
+
+    .gameHeader {
+        font-size: 1.25rem;
+    }
+
+    .scoreOdd{
+        min-width: 15vw;
+    }
+    .scoreEven{
+        min-width: 15vw;
+    }
+
+    .player {
+        font-size: 0.5rem;
+        word-wrap: break-word;
+    }
+
+    .button.reset{
+        margin-top: 0rem;
+    }
+
+    .button.next{
+        margin-bottom: 2rem;
+    }
+
+    .score1{
+        font-size: 0.9rem;
+    }
+    .score2{
+        font-size: 0.9rem;
+    }
+
+    .button.win {
+        width: 50vw;
+    }
+}

@@ -393,23 +393,23 @@ body {
 
 @-webkit-keyframes bang {
   to {
-    box-shadow: 132px 25.33333px white, -34px -197.66667px white, -130px -398.66667px white, -165px -219.66667px white, -170px -297.66667px white, -143px -105.66667px white, -35px -241.66667px white, -43px -112.66667px white, 81px -52.66667px white, 54px -183.66667px white, 110px -286.66667px white, 178px 71.33333px white, -150px -328.66667px white, -31px -372.66667px white, -32px -264.66667px white, 99px -375.66667px white, -107px -211.66667px white, 102px 57.33333px white, 154px -333.66667px white, 158px -246.66667px white, 244px -362.66667px white, 55px -400.66667px white, 50px 33.33333px white, -94px 70.33333px white, 176px -78.66667px white, -112px -295.66667px white, 77px -289.66667px white, -231px -194.66667px white, 28px -143.66667px white, 215px -125.66667px white, 73px -64.66667px white, 101px 66.33333px white, -176px -278.66667px white, -242px -196.66667px white, 150px -74.66667px white, 68px -139.66667px white, -243px 16.33333px white, 135px -41.66667px white, -113px -390.66667px white, 45px 40.33333px white, -238px -88.66667px white, -207px -40.66667px white, -195px -368.66667px white, -42px -208.66667px white, 129px -79.66667px white, 21px -241.66667px white, -157px -286.66667px white, 99px -190.66667px white, 131px -1.66667px white, 26px 32.33333px white, -21px -286.66667px white; } }
+    box-shadow: -34px -44.66667px white, 164px -317.66667px white, -235px -159.66667px white, -24px -396.66667px white, 182px -385.66667px white, 122px 41.33333px white, 1px -137.66667px white, -152px -261.66667px white, -192px -306.66667px white, 48px -158.66667px white, 226px 66.33333px white, -107px -334.66667px white, -91px -79.66667px white, 188px -84.66667px white, -5px -230.66667px white, 138px -220.66667px white, -216px -280.66667px white, -213px 12.33333px white, 222px -119.66667px white, -220px -55.66667px white, -41px -349.66667px white, -127px -258.66667px white, 222px -391.66667px white, 158px -404.66667px white, 124px -288.66667px white, -99px 40.33333px white, 76px -108.66667px white, 106px -344.66667px white, -143px -20.66667px white, 236px -175.66667px white, -19px -367.66667px white, -39px -150.66667px white, -148px -37.66667px white, -100px -350.66667px white, 107px -280.66667px white, 250px -379.66667px white, -170px -10.66667px white, -69px 3.33333px white, -65px 16.33333px white, -86px 11.33333px white, 13px -355.66667px white, -140px -268.66667px white, 161px -272.66667px white, 114px -288.66667px white, -232px -387.66667px white, -201px -2.66667px white, -13px -258.66667px white, -92px 54.33333px white, 27px -25.66667px white, 121px -338.66667px white, 34px -114.66667px white; } }
 
 @-moz-keyframes bang {
   to {
-    box-shadow: 132px 25.33333px white, -34px -197.66667px white, -130px -398.66667px white, -165px -219.66667px white, -170px -297.66667px white, -143px -105.66667px white, -35px -241.66667px white, -43px -112.66667px white, 81px -52.66667px white, 54px -183.66667px white, 110px -286.66667px white, 178px 71.33333px white, -150px -328.66667px white, -31px -372.66667px white, -32px -264.66667px white, 99px -375.66667px white, -107px -211.66667px white, 102px 57.33333px white, 154px -333.66667px white, 158px -246.66667px white, 244px -362.66667px white, 55px -400.66667px white, 50px 33.33333px white, -94px 70.33333px white, 176px -78.66667px white, -112px -295.66667px white, 77px -289.66667px white, -231px -194.66667px white, 28px -143.66667px white, 215px -125.66667px white, 73px -64.66667px white, 101px 66.33333px white, -176px -278.66667px white, -242px -196.66667px white, 150px -74.66667px white, 68px -139.66667px white, -243px 16.33333px white, 135px -41.66667px white, -113px -390.66667px white, 45px 40.33333px white, -238px -88.66667px white, -207px -40.66667px white, -195px -368.66667px white, -42px -208.66667px white, 129px -79.66667px white, 21px -241.66667px white, -157px -286.66667px white, 99px -190.66667px white, 131px -1.66667px white, 26px 32.33333px white, -21px -286.66667px white; } }
+    box-shadow: -34px -44.66667px white, 164px -317.66667px white, -235px -159.66667px white, -24px -396.66667px white, 182px -385.66667px white, 122px 41.33333px white, 1px -137.66667px white, -152px -261.66667px white, -192px -306.66667px white, 48px -158.66667px white, 226px 66.33333px white, -107px -334.66667px white, -91px -79.66667px white, 188px -84.66667px white, -5px -230.66667px white, 138px -220.66667px white, -216px -280.66667px white, -213px 12.33333px white, 222px -119.66667px white, -220px -55.66667px white, -41px -349.66667px white, -127px -258.66667px white, 222px -391.66667px white, 158px -404.66667px white, 124px -288.66667px white, -99px 40.33333px white, 76px -108.66667px white, 106px -344.66667px white, -143px -20.66667px white, 236px -175.66667px white, -19px -367.66667px white, -39px -150.66667px white, -148px -37.66667px white, -100px -350.66667px white, 107px -280.66667px white, 250px -379.66667px white, -170px -10.66667px white, -69px 3.33333px white, -65px 16.33333px white, -86px 11.33333px white, 13px -355.66667px white, -140px -268.66667px white, 161px -272.66667px white, 114px -288.66667px white, -232px -387.66667px white, -201px -2.66667px white, -13px -258.66667px white, -92px 54.33333px white, 27px -25.66667px white, 121px -338.66667px white, 34px -114.66667px white; } }
 
 @-o-keyframes bang {
   to {
-    box-shadow: 132px 25.33333px white, -34px -197.66667px white, -130px -398.66667px white, -165px -219.66667px white, -170px -297.66667px white, -143px -105.66667px white, -35px -241.66667px white, -43px -112.66667px white, 81px -52.66667px white, 54px -183.66667px white, 110px -286.66667px white, 178px 71.33333px white, -150px -328.66667px white, -31px -372.66667px white, -32px -264.66667px white, 99px -375.66667px white, -107px -211.66667px white, 102px 57.33333px white, 154px -333.66667px white, 158px -246.66667px white, 244px -362.66667px white, 55px -400.66667px white, 50px 33.33333px white, -94px 70.33333px white, 176px -78.66667px white, -112px -295.66667px white, 77px -289.66667px white, -231px -194.66667px white, 28px -143.66667px white, 215px -125.66667px white, 73px -64.66667px white, 101px 66.33333px white, -176px -278.66667px white, -242px -196.66667px white, 150px -74.66667px white, 68px -139.66667px white, -243px 16.33333px white, 135px -41.66667px white, -113px -390.66667px white, 45px 40.33333px white, -238px -88.66667px white, -207px -40.66667px white, -195px -368.66667px white, -42px -208.66667px white, 129px -79.66667px white, 21px -241.66667px white, -157px -286.66667px white, 99px -190.66667px white, 131px -1.66667px white, 26px 32.33333px white, -21px -286.66667px white; } }
+    box-shadow: -34px -44.66667px white, 164px -317.66667px white, -235px -159.66667px white, -24px -396.66667px white, 182px -385.66667px white, 122px 41.33333px white, 1px -137.66667px white, -152px -261.66667px white, -192px -306.66667px white, 48px -158.66667px white, 226px 66.33333px white, -107px -334.66667px white, -91px -79.66667px white, 188px -84.66667px white, -5px -230.66667px white, 138px -220.66667px white, -216px -280.66667px white, -213px 12.33333px white, 222px -119.66667px white, -220px -55.66667px white, -41px -349.66667px white, -127px -258.66667px white, 222px -391.66667px white, 158px -404.66667px white, 124px -288.66667px white, -99px 40.33333px white, 76px -108.66667px white, 106px -344.66667px white, -143px -20.66667px white, 236px -175.66667px white, -19px -367.66667px white, -39px -150.66667px white, -148px -37.66667px white, -100px -350.66667px white, 107px -280.66667px white, 250px -379.66667px white, -170px -10.66667px white, -69px 3.33333px white, -65px 16.33333px white, -86px 11.33333px white, 13px -355.66667px white, -140px -268.66667px white, 161px -272.66667px white, 114px -288.66667px white, -232px -387.66667px white, -201px -2.66667px white, -13px -258.66667px white, -92px 54.33333px white, 27px -25.66667px white, 121px -338.66667px white, 34px -114.66667px white; } }
 
 @-ms-keyframes bang {
   to {
-    box-shadow: 132px 25.33333px white, -34px -197.66667px white, -130px -398.66667px white, -165px -219.66667px white, -170px -297.66667px white, -143px -105.66667px white, -35px -241.66667px white, -43px -112.66667px white, 81px -52.66667px white, 54px -183.66667px white, 110px -286.66667px white, 178px 71.33333px white, -150px -328.66667px white, -31px -372.66667px white, -32px -264.66667px white, 99px -375.66667px white, -107px -211.66667px white, 102px 57.33333px white, 154px -333.66667px white, 158px -246.66667px white, 244px -362.66667px white, 55px -400.66667px white, 50px 33.33333px white, -94px 70.33333px white, 176px -78.66667px white, -112px -295.66667px white, 77px -289.66667px white, -231px -194.66667px white, 28px -143.66667px white, 215px -125.66667px white, 73px -64.66667px white, 101px 66.33333px white, -176px -278.66667px white, -242px -196.66667px white, 150px -74.66667px white, 68px -139.66667px white, -243px 16.33333px white, 135px -41.66667px white, -113px -390.66667px white, 45px 40.33333px white, -238px -88.66667px white, -207px -40.66667px white, -195px -368.66667px white, -42px -208.66667px white, 129px -79.66667px white, 21px -241.66667px white, -157px -286.66667px white, 99px -190.66667px white, 131px -1.66667px white, 26px 32.33333px white, -21px -286.66667px white; } }
+    box-shadow: -34px -44.66667px white, 164px -317.66667px white, -235px -159.66667px white, -24px -396.66667px white, 182px -385.66667px white, 122px 41.33333px white, 1px -137.66667px white, -152px -261.66667px white, -192px -306.66667px white, 48px -158.66667px white, 226px 66.33333px white, -107px -334.66667px white, -91px -79.66667px white, 188px -84.66667px white, -5px -230.66667px white, 138px -220.66667px white, -216px -280.66667px white, -213px 12.33333px white, 222px -119.66667px white, -220px -55.66667px white, -41px -349.66667px white, -127px -258.66667px white, 222px -391.66667px white, 158px -404.66667px white, 124px -288.66667px white, -99px 40.33333px white, 76px -108.66667px white, 106px -344.66667px white, -143px -20.66667px white, 236px -175.66667px white, -19px -367.66667px white, -39px -150.66667px white, -148px -37.66667px white, -100px -350.66667px white, 107px -280.66667px white, 250px -379.66667px white, -170px -10.66667px white, -69px 3.33333px white, -65px 16.33333px white, -86px 11.33333px white, 13px -355.66667px white, -140px -268.66667px white, 161px -272.66667px white, 114px -288.66667px white, -232px -387.66667px white, -201px -2.66667px white, -13px -258.66667px white, -92px 54.33333px white, 27px -25.66667px white, 121px -338.66667px white, 34px -114.66667px white; } }
 
 @keyframes bang {
   to {
-    box-shadow: 132px 25.33333px white, -34px -197.66667px white, -130px -398.66667px white, -165px -219.66667px white, -170px -297.66667px white, -143px -105.66667px white, -35px -241.66667px white, -43px -112.66667px white, 81px -52.66667px white, 54px -183.66667px white, 110px -286.66667px white, 178px 71.33333px white, -150px -328.66667px white, -31px -372.66667px white, -32px -264.66667px white, 99px -375.66667px white, -107px -211.66667px white, 102px 57.33333px white, 154px -333.66667px white, 158px -246.66667px white, 244px -362.66667px white, 55px -400.66667px white, 50px 33.33333px white, -94px 70.33333px white, 176px -78.66667px white, -112px -295.66667px white, 77px -289.66667px white, -231px -194.66667px white, 28px -143.66667px white, 215px -125.66667px white, 73px -64.66667px white, 101px 66.33333px white, -176px -278.66667px white, -242px -196.66667px white, 150px -74.66667px white, 68px -139.66667px white, -243px 16.33333px white, 135px -41.66667px white, -113px -390.66667px white, 45px 40.33333px white, -238px -88.66667px white, -207px -40.66667px white, -195px -368.66667px white, -42px -208.66667px white, 129px -79.66667px white, 21px -241.66667px white, -157px -286.66667px white, 99px -190.66667px white, 131px -1.66667px white, 26px 32.33333px white, -21px -286.66667px white; } }
+    box-shadow: -34px -44.66667px white, 164px -317.66667px white, -235px -159.66667px white, -24px -396.66667px white, 182px -385.66667px white, 122px 41.33333px white, 1px -137.66667px white, -152px -261.66667px white, -192px -306.66667px white, 48px -158.66667px white, 226px 66.33333px white, -107px -334.66667px white, -91px -79.66667px white, 188px -84.66667px white, -5px -230.66667px white, 138px -220.66667px white, -216px -280.66667px white, -213px 12.33333px white, 222px -119.66667px white, -220px -55.66667px white, -41px -349.66667px white, -127px -258.66667px white, 222px -391.66667px white, 158px -404.66667px white, 124px -288.66667px white, -99px 40.33333px white, 76px -108.66667px white, 106px -344.66667px white, -143px -20.66667px white, 236px -175.66667px white, -19px -367.66667px white, -39px -150.66667px white, -148px -37.66667px white, -100px -350.66667px white, 107px -280.66667px white, 250px -379.66667px white, -170px -10.66667px white, -69px 3.33333px white, -65px 16.33333px white, -86px 11.33333px white, 13px -355.66667px white, -140px -268.66667px white, 161px -272.66667px white, 114px -288.66667px white, -232px -387.66667px white, -201px -2.66667px white, -13px -258.66667px white, -92px 54.33333px white, 27px -25.66667px white, 121px -338.66667px white, 34px -114.66667px white; } }
 
 @-webkit-keyframes gravity {
   to {
@@ -540,3 +540,76 @@ body {
   80%, 99.9% {
     margin-top: 30%;
     margin-left: 80%; } }
+
+@media only screen and (max-width: 600px) {
+  .body {
+    margin: 0 1rem;
+    text-align: center; }
+  .heading {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem; }
+  .plainText {
+    font-size: 1rem; }
+  .playerForm .button {
+    margin-left: auto;
+    margin-right: auto; }
+  .input {
+    font-size: 1rem;
+    width: 50vw;
+    height: 1rem; }
+  .players .list {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem; }
+  .players .input {
+    height: 1rem; }
+  .listTitle {
+    font-size: 1rem; }
+  .listItem {
+    font-size: 1rem; }
+  .button {
+    font-size: 1rem; }
+  .cardGroup {
+    flex-direction: column; }
+    .cardGroup .fullCard {
+      margin-right: auto;
+      margin-left: auto; }
+  .button.reset {
+    margin-bottom: 3rem; } }
+
+@media only screen and (max-width: 400px) {
+  .heading {
+    font-size: 1.25rem; }
+  .plainText {
+    font-size: 0.9rem; }
+  .button {
+    font-size: 0.9rem; }
+  .cardGroup {
+    align-items: center; }
+  .fullCard {
+    min-width: 250px;
+    align-items: center; }
+  .card {
+    min-width: 175px;
+    height: 200px; }
+  .gameHeader {
+    font-size: 1.25rem; }
+  .scoreOdd {
+    min-width: 15vw; }
+  .scoreEven {
+    min-width: 15vw; }
+  .player {
+    font-size: 0.5rem;
+    word-wrap: break-word; }
+  .button.reset {
+    margin-top: 0rem; }
+  .button.next {
+    margin-bottom: 2rem; }
+  .score1 {
+    font-size: 0.9rem; }
+  .score2 {
+    font-size: 0.9rem; }
+  .button.win {
+    width: 50vw; } }
