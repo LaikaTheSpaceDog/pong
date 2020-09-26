@@ -38,4 +38,6 @@ return gulp.src('./src/styles/scss/styles.scss')
     .pipe(gulp.dest('./src/styles/css/'));
 });
 
+// runs sass and minify-css in series
+
 gulp.task('minify-sass', gulp.series('sass', 'minify-css'));

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "../../styles/css/styles.min.css"
-import Landing from "../Landing";
+import Landing from "../Landing/Landing";
 import Home from "../Home";
 import Games from "../Games";
 import Winner from "../Winner";

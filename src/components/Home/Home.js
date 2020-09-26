@@ -31,11 +31,11 @@ class Home extends Component {
             shuffledPlayers: [
                 ...this.state.shuffledPlayers,
                     this.state.playerName,
-            ],
-            idCounter: this.state.idCounter + 1
+            ]
         });
     };
 
+    // Checks whether the number passed in is 4 or greater and also a power of 2 (e.g. 4, 8, 16, 32...)
     powerOf2MoreThan4 = n => {
         return n < 4 ? false : (
         n && (n & (n - 1)) === 0);
@@ -51,6 +51,7 @@ class Home extends Component {
                 ...this.state,
                 playersError: true
             });
+            // Sets playersError back to false after 3 seconds so that if user enters wrong number of players again, the warning message below will flash agaim.
             setTimeout(() => {
                 this.setState({
                     ...this.state,

@@ -60,6 +60,7 @@ class Card extends Component {
         })
     }
 
+    // Checks to see if the id property has changed - if yes, resets scores, winner, winnerName and submitted to original values
     componentDidUpdate(prevProps){
         if(this.props.id !== prevProps.id){
             this.setState({
