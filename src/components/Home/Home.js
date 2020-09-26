@@ -15,6 +15,7 @@ class Home extends Component {
         this.handlePlayer = this.handlePlayer.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleAddPlayer = this.handleAddPlayer.bind(this);
+        this.handleClear = this.handleClear.bind(this);
     };
 
     handlePlayer(e){
@@ -60,6 +61,14 @@ class Home extends Component {
             }, 3000);
         };
     }
+
+    handleClear(){
+        this.setState({
+            ...this.state,
+            playerArray: [],
+            shuffledPlayers: []
+        })
+    }
     
     render(){
         let { playersError } = this.state;
@@ -82,6 +91,9 @@ class Home extends Component {
                                     {this.state.playerArray.map((item, index) => (
                                         <li className="listItem" key={ index }>{ item }</li>
                                     ))}
+                                    <div className="centerButton">
+                                        <button className="button" onClick={ this.handleClear }>Clear</button>
+                                    </div>
                                 </ul>
                                 <div className="break"></div>
                                 <button className="button start" type="submit">Start!</button>
