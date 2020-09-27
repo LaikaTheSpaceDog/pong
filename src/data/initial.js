@@ -5,7 +5,8 @@ const initial = {
     winners: [],
     round: 1,
     submitted: false,
-    finished: false
+    finished: false,
+    winningScore: 21
 }
 
 export default initial;

@@ -28,9 +28,10 @@ const submitPlayers = (state, { players }) => ({
     submitted: true
 })
 
-const generateFirstRound = (state, { shuffledPlayers }) => ({
+const generateFirstRound = (state, { shuffledPlayers, winningScore }) => ({
     ...state, 
-    games: randomPairs(shuffledPlayers)
+    games: randomPairs(shuffledPlayers),
+    winningScore: winningScore
 })
 
 const reset = () => ({

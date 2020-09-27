@@ -7,7 +7,8 @@ const mapStateToProps = state => {
         players: state.players,
         games: state.games,
         round: state.round,
-        winners: state.winners
+        winners: state.winners,
+        winningScore: state.winningScore
     };
 };
 

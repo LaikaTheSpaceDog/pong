@@ -5,11 +5,12 @@ export const addPlayer = ({ playerArray }) => {
     };
 };
 
-export const createTeams = ({ playerArray, shuffledPlayers }) => {
+export const createTeams = ({ playerArray, shuffledPlayers, winningScore }) => {
     return {
         type: "CREATE_GAMES",
         players: playerArray,
-        shuffledPlayers: shuffledPlayers
+        shuffledPlayers: shuffledPlayers,
+        winningScore: winningScore
     };
 };
 

@@ -10,7 +10,8 @@ class Card extends Component {
             player2: 0,
             winner: 0,
             winnerName: "",
-            submitted: false
+            submitted: false,
+            winningScore: props.winningScore
         };
 
         this.handlePlayer1 = this.handlePlayer1.bind(this);
@@ -21,14 +22,14 @@ class Card extends Component {
     };
 
     winner(score, player){
-        return score >= 21 ? player : 0;
+        return score >= this.state.winningScore ? player : 0;
     }
 
     score(num){
-        if(num < 21){
+        if(num < this.state.winningScore){
             return num += 1;
         } else {
-            return 21;
+            return this.state.winningScore;
         }
     }
     

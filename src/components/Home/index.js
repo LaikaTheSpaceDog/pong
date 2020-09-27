@@ -4,7 +4,8 @@ import { addPlayer, createTeams } from "../../data/actions";
 
 const mapStateToProps = state => {
     return {
-        players: state.players
+        players: state.players,
+        winningScore: state.winningScore
     };
 };
 

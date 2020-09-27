@@ -11,7 +11,8 @@ class Home extends Component {
             shuffledPlayers: [],
             playersError: false,
             hovering: 0,
-            originalName: 2 // set initially to 2 as ternary below checking for true/false
+            originalName: 2, // set initially to 2 as ternary below checking for true/false
+            winningScore: props.winningScore 
         };
 
         this.handlePlayer = this.handlePlayer.bind(this);
@@ -20,6 +21,7 @@ class Home extends Component {
         this.handleClear = this.handleClear.bind(this);
         this.handleFilter = this.handleFilter.bind(this);
         this.handleHover = this.handleHover.bind(this);
+        this.handleWinning = this.handleWinning.bind(this);
     };
 
     handlePlayer(e){
@@ -102,6 +104,18 @@ class Home extends Component {
             shuffledPlayers: this.filter(this.state.shuffledPlayers, index)
         })
     }
+
+    // Prevents default behaviour of number input showing '0' when user tries to clear input field
+    noZero(num){
+        return num === 0 ? "" : num;
+    }
+
+    handleWinning(e){
+        this.setState({
+            ...this.state,
+            winningScore: this.noZero(+ e.currentTarget.value)
+        })
+    }
     
     render(){
         let { playersError } = this.state;
@@ -117,6 +131,8 @@ class Home extends Component {
                             <input type="text" className="input" onChange={ this.handlePlayer } value={ this.state.playerName }/>
                             <button className="button" onClick={ this.handleAddPlayer } type="button">Add</button>
                             {this.state.originalName ? null : <p className="plainText warn">Name already taken!</p>}
+                            <label className="plainText">Winning Score:</label>
+                            <input type="number" min="1" max="100" className="input score" onChange={ this.handleWinning } value={ this.state.winningScore }/>
                         </div>
                         {this.state.playerArray.length === 0 ? null :               
                             <>

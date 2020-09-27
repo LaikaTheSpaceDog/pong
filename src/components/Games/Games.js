@@ -9,14 +9,14 @@ const whatRound = (games, round) => {
     );
 }
 
-const Games = ({ games, handleReset, handleSubmit, handleNextRound, winners, round }) => {
+const Games = ({ games, handleReset, handleSubmit, handleNextRound, winners, round, winningScore }) => {
     
     return (
         <>
             <h1 className="heading">{ whatRound(games, round) }</h1>
                 <section className="cardGroup">
                     { games.map((item, index) => (
-                        <Card handleSubmit={ handleSubmit } key={ index } game={ index } id={ `${index}${item.player1}${item.player2}` } player1Name={ item.player1 } player2Name={ item.player2 } winners={ winners } />
+                        <Card winningScore= { winningScore } handleSubmit={ handleSubmit } key={ index } game={ index } id={ `${index}${item.player1}${item.player2}` } player1Name={ item.player1 } player2Name={ item.player2 } winners={ winners } />
                     ))}
                 </section>
             <div className="centerButton">
