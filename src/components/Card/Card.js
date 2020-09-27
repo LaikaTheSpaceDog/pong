@@ -16,6 +16,7 @@ class Card extends Component {
         this.handlePlayer1 = this.handlePlayer1.bind(this);
         this.handlePlayer2 = this.handlePlayer2.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = this.handleReset.bind(this);
 
     };
 
@@ -57,6 +58,14 @@ class Card extends Component {
         this.setState({
             ...this.state,
             submitted: true
+        })
+    }
+
+    handleReset(){
+        this.setState({
+            ...this.state,
+            player1: 0,
+            player2: 0
         })
     }
 
@@ -104,10 +113,11 @@ class Card extends Component {
                                 </section>
                             </section>
                             <div className="centerButton">
-                                { winner === 0 ? null : (
+                                { winner === 0 ? <button className="button" type="button" onClick={ this.handleReset }>Reset</button> : (
                                     submitted !== true ? 
                                     <>
                                         <p className="plainText">{ `${winner === 1 ? player1Name : player2Name} Wins!` }</p>
+                                        <button className="button win" type="button" onClick={ this.handleReset }>Reset</button>
                                         <button className="button win" onClick={ this.handleSubmit } type="submit">Submit</button>
                                     </> :
                                     <p className="plainText">Scores submitted!</p>
