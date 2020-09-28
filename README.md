@@ -4,7 +4,7 @@ Retro Pong-themed tool that randomly created pairings for a table tennis tournam
 
 ## Live site
 
-TBC
+https://laikathespacedog.github.io/pong/#/
 
 ## Setup instructions
 
