@@ -1,4 +1,5 @@
 # (Ping)-Pong
+![Screen shot of landing page of (Ping)-Pong](pong.png)
 
 Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected from the user. UI built using React and Redux for state management.
 
