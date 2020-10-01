@@ -1,11 +1,11 @@
 # (Ping)-Pong
 ![Screen shot of landing page of (Ping)-Pong](pong.png)
 
-Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected from the user. UI built using React and Redux for state management.
+Retro Pong-themed tool that randomly created pairings for a table tennis tournament bracket from a list of names collected from the user. UI built using React and Redux for state management. This app was originally built in 7 days as part of an assignment for the Develop Me Coding Fellowship (handed in on 27 September 2020), however further changes might be made in the future.
 
 ## Live site
 
-TBC
+https://laikathespacedog.github.io/pong/#/
 
 ## Setup instructions
 
@@ -51,5 +51,5 @@ To get set up with the project:
 
 ## Credits
 
-Animation on landing component based on Pedrobfranca's 'Pong' on codepen: https://codepen.io/Pedrofbfranca/pen/dfphG
-Animation on winner component based on Eddie Lin's Pure CSS Fireworks on codepen: https://codepen.io/yshlin/pen/ylDEk
+1. Animation on landing component based on Pedrobfranca's 'Pong' on codepen: https://codepen.io/Pedrofbfranca/pen/dfphG
+2. Animation on winner component based on Eddie Lin's Pure CSS Fireworks on codepen: https://codepen.io/yshlin/pen/ylDEk
